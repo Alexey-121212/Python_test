@@ -26,10 +26,10 @@ arr = [5, 8, 6, 4, 9, 2, 7, 3]
 max = 0
 if len(arr)>2:
     for i in range(1,len(arr)-1):
-        if (arr[i]+arr[i+1]+arr[i+2])>max:
-            max = arr[i]+arr[i+1]+arr[i+2]
+        if (arr[i]+arr[i+1]+arr[i-1])>max:
+            max = arr[i]+arr[i+1]+arr[i-1]
 else:
-    for i in range(0,len(arr)-1):
+    for i in range(0,len(arr)):
         max+=arr[i]
         
 print(max)
