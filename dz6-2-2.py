@@ -18,6 +18,6 @@ n = 4
 # 11
 
 print(a1)
-for i in range(0,n-1):
+for i in range(n-1):
     a1 += d
     print(a1)

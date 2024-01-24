@@ -25,6 +25,4 @@ max_number = 10
 # 16
 # 19
 
-for i in range(0, len(list_1)):
-    if (list_1[i]<=max_number) & (list_1[i]>=min_number):
-        print(i)
+print ([i for i in range(len(list_1)) if list_1[i]<=max_number & (list_1[i]>=min_number)])
